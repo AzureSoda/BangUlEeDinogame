@@ -155,10 +155,10 @@ It's a game play video
 ---
 
 ## 📝 Reasons for project planning
-<img src="https://user-images.githubusercontent.com/49617190/204704448-6c2ea206-b5cb-454a-acaa-9dc55741fdbf.png" width="500" height="700">
+<img src="https://user-images.githubusercontent.com/49617190/204704448-6c2ea206-b5cb-454a-acaa-9dc55741fdbf.png" width="500" height="700">  
 
 This is my cat, BangUlEe.
-<img src="https://user-images.githubusercontent.com/49617190/204705259-c445467c-a907-4c8a-93b7-3f2c0fbfc6e6.gif" width="800" height="800">
+<img src="https://user-images.githubusercontent.com/49617190/204705259-c445467c-a907-4c8a-93b7-3f2c0fbfc6e6.gif" width="800" height="800">  
 I was interested in developing a game with UNITY. Usually, I was thinking about what topic to make a game, and I thought it would be fun to make a game with this topic after seeing BangUlEe jump at home.
 
 ---
@@ -187,23 +187,23 @@ Through a dotting program, I made my own Asset-Department
 
 ## 📝 Code, animation description
 
-![image](https://user-images.githubusercontent.com/49617190/204999428-1a855d17-a4b8-4ce7-82f9-acffeac951f4.png)
+![image](https://user-images.githubusercontent.com/49617190/204999428-1a855d17-a4b8-4ce7-82f9-acffeac951f4.png)  
 CurrentScore.cs Code to store and forward the current score.
 
-![image](https://user-images.githubusercontent.com/49617190/204999637-de41bf50-9c06-49b2-aab8-529e62271ea5.png)
+![image](https://user-images.githubusercontent.com/49617190/204999637-de41bf50-9c06-49b2-aab8-529e62271ea5.png)  
 Code that causes the game Replay.cs to run again. Apply to buttons to restart the game.
 
 
-![image](https://user-images.githubusercontent.com/49617190/205010857-4df266d9-e921-4bed-80b4-5acb8aee537c.png)
+![image](https://user-images.githubusercontent.com/49617190/205010857-4df266d9-e921-4bed-80b4-5acb8aee537c.png)  
 Code for generating generateobstacle.cs obstacle cactus. It's created by randomly changing the x value, and it's created by randomizing the time it's created, and it's created by creating obstacles, and it's automatically disappearing over time through the destroy function.
 
-![image](https://user-images.githubusercontent.com/49617190/205000836-2897f73d-ed99-4ac8-bc5a-4bf20bd123c1.png)
+![image](https://user-images.githubusercontent.com/49617190/205000836-2897f73d-ed99-4ac8-bc5a-4bf20bd123c1.png)  
 Code to make the character jump.cs jump. I made it jump every time I touched it, and I made it switch to the game over scene if I hit it by adding a crash decision.
 
-![image](https://user-images.githubusercontent.com/49617190/205001173-1a08147d-3929-4d47-807c-c43220e4be8b.png)
+![image](https://user-images.githubusercontent.com/49617190/205001173-1a08147d-3929-4d47-807c-c43220e4be8b.png)  
 Code to adjust the speed of the move.cs game. I made it convenient to adjust the speed in the editor by using the public float. As a result of the feedback, there were many opinions that the current speed was appropriate, so we decided on the current speed.
 
-![image](https://user-images.githubusercontent.com/49617190/205001615-7942f7b1-9170-4699-810a-54a4708bd23c.png)
+![image](https://user-images.githubusercontent.com/49617190/205001615-7942f7b1-9170-4699-810a-54a4708bd23c.png)  
 pipemovement.cs A code that allows the cactus, an obstacle, to move to the side, which is the direction of the game, at speed. I made it convenient to adjust the speed in the editor by using the public float. As a result of the feedback, there were many opinions that the current speed was appropriate, so we decided on the current speed.
 
 groundanimation.anim
@@ -214,11 +214,11 @@ It has an effect on the ground asset, making the game look more mobile.
 ## 📝How to play - Screenshot
 Download the latest version from the release of this repository and run the BangUlEeDinogame.exe file to play.
 
-![image](https://user-images.githubusercontent.com/49617190/205098892-4596e89c-0326-4f41-b56d-d0a5dacfa463.png)
+![image](https://user-images.githubusercontent.com/49617190/205098892-4596e89c-0326-4f41-b56d-d0a5dacfa463.png)  
 This is the game play screen On the far right side of the screen, the score of the game is made, and when you touch the cat character, it jumps up. Avoid randomly generated cactus and proceed forward.
 Even if the character falls on the floor, it becomes a game over.
 
-![image](https://user-images.githubusercontent.com/49617190/205099054-f1181584-8aaf-4b33-9905-b254b997d3d5.png)
+![image](https://user-images.githubusercontent.com/49617190/205099054-f1181584-8aaf-4b33-9905-b254b997d3d5.png)  
 This is the page that comes out when the game is over. Press the button to play the game again.
 
 
