@@ -65,9 +65,6 @@ https://user-images.githubusercontent.com/49617190/205096980-b294a39b-a068-4b96-
 ![image](https://user-images.githubusercontent.com/49617190/204999428-1a855d17-a4b8-4ce7-82f9-acffeac951f4.png)    
 CurrentScore.cs 현재 스코어를 저장하고 전달하는 코드입니다.
 
-![image](https://user-images.githubusercontent.com/49617190/205000513-3e0ccb85-4c32-40d7-80ef-cf5920ae310f.png)  
-BestScore.cs 스코어중에서 가장 좋은 스코어를 저장하고 전달하는 코드입니다.
-
 ![image](https://user-images.githubusercontent.com/49617190/204999637-de41bf50-9c06-49b2-aab8-529e62271ea5.png)  
 Replay.cs 게임을 다시 실행하게 만드는 코드입니다. 버튼에 적용시켜서 게임을 다시 시작하게 만듭니다.
 
@@ -82,7 +79,7 @@ jump.cs 캐릭터인 방울이가 점프하게 만드는 코드입니다. 터치
 move.cs 게임의 속도를 조정하는 코드입니다. public float를 써서 에디터에서 speeed를 편리하게 조절하도록 만들었습니다. 피드백 결과 현재의 속도가 적절하다는 의견이 많아서 현재의 속도로 결정하게 되었습니다.
 
 ![image](https://user-images.githubusercontent.com/49617190/205001615-7942f7b1-9170-4699-810a-54a4708bd23c.png)  
-pipemovement.cs 장애물인 선인장가 속도에 맞춰서 게임의 진행방향인 옆으로 이동하도록 만든 코드입니다. public float를 써서 에디터에서 speeed를 편리하게 조절하도록 만들었습니다. 피드백 결과 현재의 속도가 적절하다는 의견이 많아서 현재의 속도로 결정하게 되었습니다.
+pipemovement.cs 장애물인 선인장이 속도에 맞춰서 게임의 진행방향인 옆으로 이동하도록 만든 코드입니다. public float를 써서 에디터에서 speeed를 편리하게 조절하도록 만들었습니다. 피드백 결과 현재의 속도가 적절하다는 의견이 많아서 현재의 속도로 결정하게 되었습니다.
 
 groundanimation.anim  
 땅 에셋에 효과를 주어서 게임이 더 움직이도록 보이게 만듭니다.  
@@ -90,19 +87,14 @@ groundanimation.anim
 ---
 
 ## 📝플레이하는법- 스크린샷
-이 레포지토리의 릴리즈에서 최신 버전을 다운로드해서 BangUlEeDinogame.exe파일을 실행시키면 플레이 가능합니
+이 레포지토리의 릴리즈에서 최신 버전을 다운로드해서 BangUlEeDinogame.exe파일을 실행시키면 플레이 가능합니다.
 
+![image](https://user-images.githubusercontent.com/49617190/205098892-4596e89c-0326-4f41-b56d-d0a5dacfa463.png)  
+게임 플레이 화면입니다 화면 제일 오른쪽에는 게임의 스코어가 나오도록 만들었고 고양이 캐릭터를 터치하면 위로 점프합니다. 랜덤 생성되는 선인장을 피해서 앞으로 진행하면 됩니다.
+바닥에 캐릭터가 떨어져도 게임오버가 되게 됩니다.
 
-
-![KakaoTalk_20221201_173233861_01](https://user-images.githubusercontent.com/49617190/205004556-9ed10770-dc0d-4ef6-984a-259d97de6075.png)  
-게임의 첫화면 입니다. 게임의 로고와 캐릭터를 크게 키워서 잘 보이도록 만들었고 가운데 버튼을 눌러서 게임을 진행할 수 있습니다.
-
-![KakaoTalk_20221201_173233861_03](https://user-images.githubusercontent.com/49617190/205004695-a8274b21-2c51-44b3-961c-72cfecddb68e.png)  
-게임 플레이 화면입니다 화면 제일 오른쪽에는 게임의 스코어가 나오도록 만들었고 고양이 캐릭터를 터치하면 위로 점프합니다. 랜덤 생성되는 파이프를 피해서 앞으로 진행하면 됩니다.
-
-![KakaoTalk_20221201_173233861_02](https://user-images.githubusercontent.com/49617190/205004844-4f24a430-dff8-472e-b54c-d764e74fb595.png)  
-게임 오버시 나오는 페이지입니다. 베스트 스코어는 게임을 진행하는 동안 최고점수를 표시하고 아래 점수는 방금 플레이한 판의 점수를 기록합니다. 방금 플레이한 판의 점수가 최고점수를 갱신할시에 베스트 스코어로 바뀝니다.
-
+![image](https://user-images.githubusercontent.com/49617190/205099054-f1181584-8aaf-4b33-9905-b254b997d3d5.png)  
+게임 오버시 나오는 페이지입니다. 버튼을 누르면 게임을 다시 플레이 할 수 있습니다.
 
 ## 📝리뷰,피드백
 | 리뷰,피드백    | 별점      |
@@ -113,7 +105,7 @@ groundanimation.anim
 ---
 
 ## 📝릴리즈
-v1.0.0: 게임의 첫번째 버전입니다. 게임의 현재 최신 업데이트 버전 입니다. 피드백을 반영하여 어색했던 땅의 애니메이션 부분과 첫 화면을 수정하였습니다. 이 릴리즈를 설치해 게임을 플레이하시면 됩니다.
+v1.0.0: 게임의 첫번째 버전입니다. 게임의 현재 최신 업데이트 버전 입니다. 이 릴리즈를 설치해 게임을 플레이하시면 됩니다.
 
 ---
 
@@ -141,10 +133,10 @@ https://youtu.be/Xy5ikAg4_9E
 <hr>
 ## This is a manual for English speakers
 
-## Flappy Bang UlEe
+## BangUlEe Dino game
 Using Unity, I developed a game that cat,BangUlEe jump under the theme of our cat BangUlEe.
 
-https://user-images.githubusercontent.com/49617190/204946622-e49dc28b-c3db-43c2-8144-e84237251176.mp4  
+https://user-images.githubusercontent.com/49617190/205096980-b294a39b-a068-4b96-b682-c4f057f6bd1a.mp4   
 It's a game play video
 
 ## Table of Contents
@@ -168,55 +160,51 @@ It's a game play video
 This is my cat, BangUlEe.
 <img src="https://user-images.githubusercontent.com/49617190/204705259-c445467c-a907-4c8a-93b7-3f2c0fbfc6e6.gif" width="800" height="800">
 I was interested in developing a game with UNITY. Usually, I was thinking about what topic to make a game, and I thought it would be fun to make a game with this topic after seeing BangUlEe jump at home.
+
 ---
+
 ## 📝 Game description
 The bell touches the character and passes through the red pipe to score as many points as possible.
 Touch the screen with a simple game and the cat character jumps in the air. However, the character's drop speed is fast, so if you don't touch it at the right time, the character falls directly to the floor or hits the pipe, so it's a game that aims for high scores by passing through the pipes while adjusting the height.
-*Refer to the Flappy Bird game.
+*Refer to the Chrome Dino game.
+
 ---
 
 ## 📝 Asset Description
 
 ### The logo
-<img src="https://user-images.githubusercontent.com/49617190/204998282-a576f0e2-73f7-4da1-8cae-11bb1149a9d0.png" width="700" height="500">
+![New Piskel (1)](https://user-images.githubusercontent.com/49617190/205010430-9ca41e88-530f-42d6-9ba9-a21a361fb772.png)
 I made the logo of the game myself through a dot-taking program
 
 ### Image
-<img src="https://user-images.githubusercontent.com/49617190/204997935-1ba30814-7872-42be-9b33-9c0af704b6de.png" width="700" height="500">
+![New Piskel (1)](https://user-images.githubusercontent.com/49617190/205010430-9ca41e88-530f-42d6-9ba9-a21a361fb772.png)
 I made my own character through a dot-taking program
 
-### Sound Asset Source
-I downloaded and used it at a place where it was available for free.
-https://soundeffect-lab.info/sound/button/
+![image](https://user-images.githubusercontent.com/49617190/205010935-dc34bc39-709a-4c7b-be81-4463f0a4e59c.png)
+Through a dotting program, I made my own Asset-Department
 
 ---
 
 ## 📝 Code, animation description
 
-
-![image](https://user-images.githubusercontent.com/49617190/204999428-1a855d17-a4b8-4ce7-82f9-acffeac951f4.png)  
+![image](https://user-images.githubusercontent.com/49617190/204999428-1a855d17-a4b8-4ce7-82f9-acffeac951f4.png)
 CurrentScore.cs Code to store and forward the current score.
 
-![image](https://user-images.githubusercontent.com/49617190/205000513-3e0ccb85-4c32-40d7-80ef-cf5920ae310f.png)  
-Code to store and deliver the best score among BestScore.cs scores.
-
-![image](https://user-images.githubusercontent.com/49617190/204999637-de41bf50-9c06-49b2-aab8-529e62271ea5.png)  
+![image](https://user-images.githubusercontent.com/49617190/204999637-de41bf50-9c06-49b2-aab8-529e62271ea5.png)
 Code that causes the game Replay.cs to run again. Apply to buttons to restart the game.
 
-![image](https://user-images.githubusercontent.com/49617190/204999888-375232a0-7185-4e7c-b830-ed1671c46531.png)  
-Code that specifies the first screen of the Firststart.cs game.
 
-![image](https://user-images.githubusercontent.com/49617190/205000038-17b776cb-240f-49a8-bce5-ef9ea9917974.png)  
-Code for generating generatepipe.cs obstruction pipe. It was created by randomly changing the y value, and it was made to disappear automatically over time through the destroy function over time, and it was made to make a sound when passing through the pipe by adding a sound effect.
+![image](https://user-images.githubusercontent.com/49617190/205010857-4df266d9-e921-4bed-80b4-5acb8aee537c.png)
+Code for generating generateobstacle.cs obstacle cactus. It's created by randomly changing the x value, and it's created by randomizing the time it's created, and it's created by creating obstacles, and it's automatically disappearing over time through the destroy function.
 
-![image](https://user-images.githubusercontent.com/49617190/205000836-2897f73d-ed99-4ac8-bc5a-4bf20bd123c1.png)  
-Code to make the character jump.cs jump. I made it jump every time I touched it, and I made it switch to the game over scene if I hit it by adding a crash decision. I made a sound effect every time I jumped.
+![image](https://user-images.githubusercontent.com/49617190/205000836-2897f73d-ed99-4ac8-bc5a-4bf20bd123c1.png)
+Code to make the character jump.cs jump. I made it jump every time I touched it, and I made it switch to the game over scene if I hit it by adding a crash decision.
 
-![image](https://user-images.githubusercontent.com/49617190/205001173-1a08147d-3929-4d47-807c-c43220e4be8b.png)  
+![image](https://user-images.githubusercontent.com/49617190/205001173-1a08147d-3929-4d47-807c-c43220e4be8b.png)
 Code to adjust the speed of the move.cs game. I made it convenient to adjust the speed in the editor by using the public float. As a result of the feedback, there were many opinions that the current speed was appropriate, so we decided on the current speed.
 
-![image](https://user-images.githubusercontent.com/49617190/205001615-7942f7b1-9170-4699-810a-54a4708bd23c.png)  
-pipemovement.cs Code for pipe, an obstacle, to move to the side, which is the direction of the game, at speed. I made it convenient to adjust the speed in the editor by using the public float. As a result of the feedback, there were many opinions that the current speed was appropriate, so we decided on the current speed.
+![image](https://user-images.githubusercontent.com/49617190/205001615-7942f7b1-9170-4699-810a-54a4708bd23c.png)
+pipemovement.cs A code that allows the cactus, an obstacle, to move to the side, which is the direction of the game, at speed. I made it convenient to adjust the speed in the editor by using the public float. As a result of the feedback, there were many opinions that the current speed was appropriate, so we decided on the current speed.
 
 groundanimation.anim
 It has an effect on the ground asset, making the game look more mobile.
@@ -224,52 +212,43 @@ It has an effect on the ground asset, making the game look more mobile.
 ---
 
 ## 📝How to play - Screenshot
-Download the latest version from the release of this repository, insert the APK file into your Android phone, and install it to run.
+Download the latest version from the release of this repository and run the BangUlEeDinogame.exe file to play.
 
-![KakaoTalk_20221201_173233861](https://user-images.githubusercontent.com/49617190/205004477-d8883203-9a02-4730-a15b-10a776e015f7.png)
-This is the window that comes out when loading the game, and I made it so that the logo of the game comes out using Unity's.
+![image](https://user-images.githubusercontent.com/49617190/205098892-4596e89c-0326-4f41-b56d-d0a5dacfa463.png)
+This is the game play screen On the far right side of the screen, the score of the game is made, and when you touch the cat character, it jumps up. Avoid randomly generated cactus and proceed forward.
+Even if the character falls on the floor, it becomes a game over.
 
-![KakaoTalk_20221201_173233861_01](https://user-images.githubusercontent.com/49617190/205004556-9ed10770-dc0d-4ef6-984a-259d97de6075.png)
-This is the first screen of the game. The logo and characters of the game are enlarged to make it look good, and you can press the middle button to proceed with the game.
-
-![KakaoTalk_20221201_173233861_03](https://user-images.githubusercontent.com/49617190/205004695-a8274b21-2c51-44b3-961c-72cfecddb68e.png)
-This is the game play screen On the far right side of the screen, the score of the game is made, and when you touch the cat character, it jumps up. Avoid randomly generated pipes and proceed forward.
-
-![KakaoTalk_20221201_173233861_02](https://user-images.githubusercontent.com/49617190/205004844-4f24a430-dff8-472e-b54c-d764e74fb595.png)
-This is the page that comes out when the game is over. The best score displays the highest score during the game, and the score below records the score of the game you just played. The score of the game you just played will change to the best score when you renew the highest score.
+![image](https://user-images.githubusercontent.com/49617190/205099054-f1181584-8aaf-4b33-9905-b254b997d3d5.png)
+This is the page that comes out when the game is over. Press the button to play the game again.
 
 
 ## 📝Review, feedback
 | Review, Feedback | Stars |
 |-----------|------------|
 | It's hard to play. It's fun | 5/5 |
-| The design is unfortunate. Design to Designer | 4/5 |
-| The ground animation doesn't fit, the image comes out small on the first screen. | 4/5 |
-| The difficulty level is difficult. I think it would be good to lower it a little. | 4/5 |
+| The design is unfortunate. Design to Designer | 4/5 |  
 
 ---
 
 ## 📝 Release
-v1.0.0: This is the first version of the game.
-
-v1.1: Current latest update for the game. The animation part of the land that was awkward and the first screen was modified by reflecting the feedback. You can install this release to play the game.
+v1.0.0: Current latest update for the game. please download this version and play this game.
 
 ---
 
 
 ## 📝 Feeling, learning, disappointing
-I liked that I could make my own games, and as the professor said during the lecture, I remembered that I could proceed with the project I wanted to do and proudly upload it on my GitHub. I was able to think about why I went to the computer engineering department again while making a game, and as I did my favorite project, I was able to take more initiative than other projects.
+I liked that I could make my own games, and as the professor said during the lecture, I remembered that I could proceed with the project I wanted to do and proudly upload it on my GitHub. I was able to think about why I went to the computer engineering department again while making a game, and as I did my favorite project, I was able to take more initiative than other projects. What was unfortunate was that it would have been better to add more animation to the character, but it was unfortunate that I couldn't proceed because of my poor design skills and sense, and I was determined to learn more about Unity or other game engines during the winter vacation. This time, I made it playable on the computer by building it as an exe file, not an apk.
+If the character touches the floor, it will go to game over because it has not yet made a proper collision judgment, and it will be completed by improving this part and adding more sound effects later.  
 
 ## 📝 References
 https://www.youtube.com/watch?v=EqoU1PodQQ4&t=6591s
-https://www.youtube.com/watch?v=RgTZRT-LHcw&t=2s
-
+https://www.youtube.com/watch?v=bpAhWPQxMss&t=8s 
 
 ## 📝 License
 Follow the MIT License. I've created a license.md file in my repository.
 
 ### 📝Game Demonstration Video ###
-https://www.youtube.com/shorts/A_zOd4DcTT0
+https://youtu.be/Xy5ikAg4_9E
 
 ## 🖥️Developers
 19101191 Kim Kyung-Jun
