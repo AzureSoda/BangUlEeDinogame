@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class jump : MonoBehaviour
 {
@@ -20,5 +21,9 @@ public class jump : MonoBehaviour
             rb.velocity = Vector2.up * 9;
         }
     //화면 터치하면 점프
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        SceneManager.LoadScene("GameoverScene");
     }
 }
