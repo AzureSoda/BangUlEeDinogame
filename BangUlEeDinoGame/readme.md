@@ -123,8 +123,7 @@ v2.0.0: 게임의 현재 최신 업데이트 버전 입니다. 피드백을 반�
 ## 📝참고한곳
 무료 쉬운 게임 개발 강의 - 3시간만에 개발, 출시, 수익화까지 완성 - https://www.youtube.com/watch?v=EqoU1PodQQ4&t=6591s    
 공룡게임 3분 제작 https://www.youtube.com/watch?v=bpAhWPQxMss   
-[https://namu.wiki/w/Flappy%20Bird](https://dinorunner.com/ko/)    
-https://namu.wiki/w/Chrome/%EC%9D%B4%EC%8A%A4%ED%84%B0%20%EC%97%90%EA%B7%B8
+나무위키 공룡게임 https://namu.wiki/w/Chrome/%EC%9D%B4%EC%8A%A4%ED%84%B0%20%EC%97%90%EA%B7%B8  
 
 
 
