@@ -1,11 +1,5 @@
-# open-source-project_games
-
-
-
-
-
-
-# Flappy BangUlEe, 플래피 방울이
+# open-source-project_games2
+# BangUlEe Dino game, 방울이 공룡게임
 
 유니티를 활용하여 저희 집 고양이 방울이를 테마로 방울이가 점프하는 게임을 개발하였습니다.  
 
