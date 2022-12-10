@@ -36,22 +36,21 @@ https://user-images.githubusercontent.com/49617190/204946622-e49dc28b-c3db-43c2-
 
 ---
 ## 📝게임설명
-
-방울이 캐릭터를 터치해서 빨간색 파이프를 통과해서 점수를 얻어 최대한 많은 점수를 획득하는 게임입니다.  
-간단한 조작의 게임으로 화면을 터치하면 고양이 캐릭터가 공중에서 점프합니다. 그러나 캐릭터의 낙하속도가 빠르므로 타이밍을 맞추어 터치하지 않으면 캐릭터가 곧장 바닥으로 떨어지거나 파이프에 부딪히기 때문에 높이를 조정해 가면서 파이프사이를 통과해서 고득점을 노리는 게임입니다.
-*플래피 버드 게임을 참고하였습니다.  
+구글 크롬의 인터넷연결이 되지 않을 때 나오는 미니게임인 다이노 게임을 모티브로 우리집 고양이인 방울이가 장애물을 피해 점프하는 게임을 만든다.   
+방울이 캐릭터를 스페이스바를 눌러 점프해서 장애물을 피해 점수를 얻어 최대한 많은 점수를 획득하는 게임입니다.    
+게임이 진행될수록 속도가 빨라지며 속도에 따라 점수도 빨리 올라간다.  
+*크롬 공룡 게임을 참고하였습니다.  
 
 ---
 
 ## 📝에셋설명
 
-### 로고
-<img src="https://user-images.githubusercontent.com/49617190/204998282-a576f0e2-73f7-4da1-8cae-11bb1149a9d0.png"  width="400" height="400">
-도트 찍는 프로그램을 통해 게임의 로고를 자체 제작하였습니다
-
 ### 이미지
-<img src="https://user-images.githubusercontent.com/49617190/204997935-1ba30814-7872-42be-9b33-9c0af704b6de.png"  width="400" height="400">
+![New Piskel (1)](https://user-images.githubusercontent.com/49617190/205010430-9ca41e88-530f-42d6-9ba9-a21a361fb772.png)  
 도트 찍는 프로그램을 통해 캐릭터를 자체 제작하였습니다
+
+![image](https://user-images.githubusercontent.com/49617190/205010935-dc34bc39-709a-4c7b-be81-4463f0a4e59c.png)  
+도트 찍는 프로그램을 통해 에셋-땅을 자체 제작하였습니다
 
 ### 사운드 에셋 출처
 무료로 사용가능한 곳에서 다운 받아 사용했습니다.
@@ -61,12 +60,7 @@ https://soundeffect-lab.info/sound/button/
 
 ## 📝코드설명
 
-### 이미지
-![New Piskel (1)](https://user-images.githubusercontent.com/49617190/205010430-9ca41e88-530f-42d6-9ba9-a21a361fb772.png)  
-도트 찍는 프로그램을 통해 캐릭터를 자체 제작하였습니다
 
-![image](https://user-images.githubusercontent.com/49617190/205010935-dc34bc39-709a-4c7b-be81-4463f0a4e59c.png)  
-도트 찍는 프로그램을 통해 에셋-땅을 자체 제작하였습니다
 
 ---
 
@@ -129,6 +123,9 @@ v2.0.0: 게임의 현재 최신 업데이트 버전 입니다. 피드백을 반�
 ## 📝참고한곳
 무료 쉬운 게임 개발 강의 - 3시간만에 개발, 출시, 수익화까지 완성 - https://www.youtube.com/watch?v=EqoU1PodQQ4&t=6591s    
 공룡게임 3분 제작 https://www.youtube.com/watch?v=bpAhWPQxMss   
+[https://namu.wiki/w/Flappy%20Bird](https://dinorunner.com/ko/)    
+https://namu.wiki/w/Chrome/%EC%9D%B4%EC%8A%A4%ED%84%B0%20%EC%97%90%EA%B7%B8
+
 
 
 ## 📝라이센스
