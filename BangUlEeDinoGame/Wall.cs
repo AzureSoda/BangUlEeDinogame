@@ -35,9 +35,7 @@ public class Wall : MonoBehaviour
                     Ground[i].transform.position = new Vector3(2, Ground[i].transform.position.y, 0);
                 }
             }
-
-
-        }
+          }
 
     }
     void Move(GameObject obj)
