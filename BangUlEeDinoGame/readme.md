@@ -139,9 +139,6 @@ v2.0.0: 게임의 현재 최신 업데이트 버전 입니다. 피드백을 반�
 ## 📝라이센스
 MIT License를 따릅니다. 레포지토리 안에 license.md파일을 만들어 두었습니다.
 
-### 📝게임 시연 영상 ###
-https://www.youtube.com/shorts/A_zOd4DcTT0
-
 ## 🖥️Developers
 19101191 김경준
 
@@ -285,9 +282,6 @@ Wooden Wiki Dinosaur Game https://namu.wiki/w/Chrome/%EC%9D%B4%EC%8A4%A4%ED%84%B
 
 ## 📝 License
 Follow the MIT License. I've created a license.md file in my repository.
-
-### 📝Game Demonstration Video ###
-https://www.youtube.com/shorts/A_zOd4DcTT0
 
 ## ## 🖥️Developers
 19101191 Kim Kyung-joon
