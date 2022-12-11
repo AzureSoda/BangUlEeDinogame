@@ -3,7 +3,8 @@
 
 유니티를 활용하여 저희 집 고양이 방울이를 테마로 방울이가 점프하는 게임을 개발하였습니다.  
 
-https://user-images.githubusercontent.com/49617190/204946622-e49dc28b-c3db-43c2-8144-e84237251176.mp4
+https://user-images.githubusercontent.com/49617190/206883762-3cb0fe74-a066-4e1f-b07e-b0bf29ff1b2d.mp4
+
 
 게임플레이 영상입니다
 
@@ -59,8 +60,24 @@ https://soundeffect-lab.info/sound/button/
 ---
 
 ## 📝코드설명
+![image](https://user-images.githubusercontent.com/49617190/206884022-24b31927-a861-4273-935c-e635ca4aa163.png)  
+player.cs 코드입니다.  
+bool isGround로 캐릭터가 땅에 붙어있는지 확인합니다.
+Input.GetKeyDown으로 스페이스키를 누르면 Force만큼 캐릭터를 점프시킵니다. 이때 땅에서 떨어지므로 isGround를 false로 해줍니다.  
+OnCollisionEnter2D에서는 캐릭터가 닿은 에셋의 태그가 Ground면 다시 땅에 붙은 것이므로 isGround를 true로 변경합니다. 
 
-
+![image](https://user-images.githubusercontent.com/49617190/206884304-e9c24a2e-3bbd-4720-9938-580af6fb525e.png)  
+wall.cs 코드입니다.  
+speed: 속도값을 저장하는 변수  
+Ground: 땅 오브젝트를 담고있는 변수 
+wall: 장애물에 대한 변수  
+score: 점수에 대한 변수  
+score_cnt: 올라가는 점수를 저장할 변수
+speed += 0.1f*Time.deltaTime; 를 통해서 시간이 지남에 따라 속도를 점점 빠르게 만들어 줍니다.  
+score_cnt+=1 을 통해 점수를 계속 증가시킵니다.
+transform 함수를 통해 장애물을 계속 생성하고 위치를 초기화하게 만듭니다
+for문을 통해 아래 ground 애셋을 계속 이동시키는 애니메이션 효과를 줍니다.  
+move함수를 통해 장애물을 이동시킵니다.
 
 ---
 
@@ -68,18 +85,10 @@ https://soundeffect-lab.info/sound/button/
 
 이 레포지토리의 릴리즈에서 최신 버전인 v2.0.0을 다운로드해서 zip파일을 압축해제하고 BangUlEeDinogame.exe파일을 실행시키면 플레이 가능합니다.
 
-<img src="https://user-images.githubusercontent.com/49617190/205004477-d8883203-9a02-4730-a15b-10a776e015f7.png"  width="500" height="700">   
-게임 로딩할때 나오는 창입니다, 유니티의 기능을 활용하여 게임의 로고가 나오도록 만들었습니다.  
 
-<img src="https://user-images.githubusercontent.com/49617190/205004556-9ed10770-dc0d-4ef6-984a-259d97de6075.png"  width="500" height="700">   
-게임의 첫화면 입니다. 게임의 로고와 캐릭터를 크게 키워서 잘 보이도록 만들었고 가운데 버튼을 눌러서 게임을 진행할 수 있습니다.
+<img src="https://user-images.githubusercontent.com/49617190/206883779-04e9690d-ee64-4251-8ada-f48edb506bdf.png"  width="1000" height="700">     
 
-<img src="https://user-images.githubusercontent.com/49617190/205004695-a8274b21-2c51-44b3-961c-72cfecddb68e.png"  width="500" height="700">  
-게임 플레이 화면입니다 화면 제일 오른쪽에는 게임의 스코어가 나오도록 만들었고 고양이 캐릭터를 터치하면 위로 점프합니다. 랜덤 생성되는 파이프를 피해서 앞으로 진행하면 됩니다.
-
-<img src="https://user-images.githubusercontent.com/49617190/205004844-4f24a430-dff8-472e-b54c-d764e74fb595.png"  width="500" height="700">  
-게임 오버시 나오는 페이지입니다. 베스트 스코어는 게임을 진행하는 동안 최고점수를 표시하고 아래 점수는 방금 플레이한 판의 점수를 기록합니다. 방금 플레이한 판의 점수가 최고점수를 갱신할시에 베스트 스코어로 바뀝니다.
-
+게임 플레이 화면입니다 화면 제일 오른쪽에는 게임의 스코어가 나오도록 만들었고 고양이 캐릭터를 터치하면 위로 점프합니다. 랜덤 생성되는 장애물을 피해서 앞으로 진행하면 됩니다.
 캐릭터가 점프하면 효과음이 나오게 되고 캐릭터가 장애물과 충돌하면 효과음과 함께 게임이 종료하게 됩니다.  
 게임의 진행속도는 갈수록 빨라집니다.
 게임의 점수는 갈수록 빠르게 올라갑니다.   
