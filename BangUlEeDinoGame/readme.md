@@ -126,7 +126,7 @@ v2.0.0: 게임의 현재 최신 업데이트 버전 입니다. 피드백을 반�
 
 
 ## 📝느낀점
-오픈소스 프로젝트로 
+오픈소스 프로젝트로 처음 BangUlEeFlappybird게임을 만들고 유니티로 게임을 만드는 것에 더 재미가 생겨서 게임을 하나 더 만들어 보고 싶어져서 제작하게 되었습니다. 추후에 재시작 기능과 다른 장애물까지 추가할 계획이고 게임기획과 디자인을 공부해서 내년에는 저 혼자 인디게임개발대회에 저의 작품을 출품해보고 싶다는 각오가 생겼습니다.
 
 ---
 ## 📝참고한곳
@@ -148,4 +148,146 @@ https://www.youtube.com/shorts/A_zOd4DcTT0
 
 <hr>
 ## This is a manual for English speakers
+Using Unity, we developed a game where rattles jump under the theme of our cat BangUl
 
+https://user-images.githubusercontent.com/49617190/206883762-3cb0fe74-a066-4e1f-b07e-b0bf29ff1b2d.mp4
+
+
+It's a game play video
+
+---
+
+## Table of Contents
+
+1. [Reason for project planning] (#Project-Planning-Reason)
+2. [Game explanation] (#Game explanation)
+3. [Explanation of Asset] (#Explanation of Asset)
+4. [Code Description] (#Code Description)
+5. [How to play - Screenshot] (#How to play - Screenshot)
+6. [Review feedback] (#Review feedback)
+7. [Release] (#Release)
+8. [Feeling] (#Feeling)
+9. [Reference] (#Reference)
+10. [License] (#License)
+
+---
+
+## 📝 Reasons for project planning
+<img src="https://user-images.githubusercontent.com/49617190/204704448-6c2ea206-b5cb-454a-acaa-9dc55741fdbf.png" width="500" height="700">
+
+This is my cat, BangUl.
+
+<img src="https://user-images.githubusercontent.com/49617190/204705259-c445467c-a907-4c8a-93b7-3f2c0fbfc6e6.gif" width="500" height="500">
+
+
+I was interested in developing a game with Unity. Usually, I was thinking about what topic to make a game, and I thought it would be fun to make a game with this topic after seeing a rattles jump at home.
+
+---
+## 📝 Game description
+Based on the motif of the Dino game, a mini game that comes out when Google Chrome is not connected to the Internet, our cat, Bell, makes a game that jumps to avoid obstacles.
+It's a game in which the bell presses the space bar to jump to avoid obstacles and score as many points as possible.
+As the game progresses, the speed increases, and the score increases faster depending on the speed.
+*Refer to Chrome dinosaur game.
+
+---
+
+## 📝 Asset Description
+
+### Image
+![New Piskel (1)](https://user-images.githubusercontent.com/49617190/205010430-9ca41e88-530f-42d6-9ba9-a21a361fb772.png)
+I made my own character through a dot-taking program
+
+![image](https://user-images.githubusercontent.com/49617190/205010935-dc34bc39-709a-4c7b-be81-4463f0a4e59c.png)
+Through a dotting program, I made my own Asset-Department
+
+### Sound Asset Source
+I downloaded and used it at a place where it was available for free.
+https://soundeffect-lab.info/sound/button/
+
+---
+
+## 📝 Code description
+![image](https://user-images.githubusercontent.com/49617190/206884022-24b31927-a861-4273-935c-e635ca4aa163.png)
+Code for player.cs.
+Check if the character is stuck to the ground with the bowl is ground.
+Press the space key with Input.GetKeyDown to jump the character as much as Force. Since it falls off the ground, make is ground false.
+In OnCollisionEnter2D, the tag of the asset that the character touches is attached to the ground again if it is ground, so change isGround to true.
+
+![image](https://user-images.githubusercontent.com/49617190/206884304-e9c24a2e-3bbd-4720-9938-580af6fb525e.png)
+Code for wall.cs.
+speed: variable that stores the speed value
+Ground: Variables Containing Land Objects
+wall: variables for obstacles
+score: variable for score
+score_cnt: variable to store rising scores
+Speed += 0.1f*Time.deltaTime; makes it faster and faster over time.
+Continue to increase your score with score_cnt+=1.
+The transform function keeps creating obstacles and causes them to initialize positions
+It gives an animation effect that keeps moving the ground asset below through the for statement.
+Move the obstacle through the move function.
+
+---
+
+## 📝How to play - Screenshot
+
+Download the latest version of v2.0.0 from the release of this repository, decompress the zip file, and run the BangUlEeDinogame.exe file for play.
+
+
+<img src="https://user-images.githubusercontent.com/49617190/206883779-04e9690d-ee64-4251-8ada-f48edb506bdf.png" width="1000" height="700">
+
+This is the game play screen On the far right side of the screen, the score of the game is made, and when you touch the cat character, it jumps up. Move forward to avoid randomly generated obstacles.
+When the character jumps, a sound effect comes out, and when the character collides with an obstacle, the game ends with the sound effect.
+The game progresses faster and faster.
+The score of the game goes up faster and faster.
+
+## 📝Review feedback
+| Review, Feedback | Stars |
+|-----------|------------|
+| It's hard to play. It's fun | 5/5 |
+| The design is unfortunate. Design to Designer | 4/5 |
+| It's fun because the speed of the game is getting faster. | 4/5 |
+| It would be nice to restart the game right away if there is a restart button. | 4/5 |
+
+---
+
+## 📝 Release
+v1.0.0: This is the first version of the game.
+
+v2.0.0: Current latest update for the game. I revised it reflecting the feedback and it is the update history.
+- BangUlEeDinogame game re-production
+- Awkward Asset Correction
+- Modify to jump only when the character touches the floor
+- Modify to speed up according to time
+- Modify the speed at which the score increases faster according to time
+- Change jump method from mouse click to space key
+- Modified to play normally via exe file on your computer
+- Other errors, awkwardness, bug fixes.
+You can install this release to play the game.
+
+Future Updates to be made
+<img src="https://user-images.githubusercontent.com/49617190/206876072-e7efb84e-4974-4e5a-923f-2c27bdd61df5.png" width="400" height="400">
+We will add future updates to make the game more difficult and lively by adding obstacles-bird to avoid cactus obstacles on the ground and new obstacles in the sky.
+We are going to add the Restart button so that you can restart the game immediately within the game.
+
+---
+
+
+## 📝 Feeling
+I made BangUlEeFlappybird game for the first time as an open-source project and made it more fun to make a game with Unity, so I wanted to make another game, so I made it. I plan to add restart function and other obstacles in the future, and I am determined to study game planning and design and submit my work to the indie game development competition by myself next year.
+
+---
+## 📝 References
+Free easy game development lesson - development, launch and monetization in 3 hours - https://www.youtube.com/watch?v=EqoU1PodQQ4&t=6591s
+3 minute dinosaur game production https://www.youtube.com/watch?v=bpAhWPQxMss
+Wooden Wiki Dinosaur Game https://namu.wiki/w/Chrome/%EC%9D%B4%EC%8A4%A4%ED%84%B0%20%EC%97%90%EA%B7%B8
+
+
+
+## 📝 License
+Follow the MIT License. I've created a license.md file in my repository.
+
+### 📝Game Demonstration Video ###
+https://www.youtube.com/shorts/A_zOd4DcTT0
+
+## ## 🖥️Developers
+19101191 Kim Kyung-joon
