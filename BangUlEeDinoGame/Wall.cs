@@ -7,7 +7,7 @@ public class Wall : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] GameObject[] Ground = new GameObject[2];
-    [SerializeField] GameObject wall, Restart;
+    [SerializeField] GameObject wall;
     [SerializeField] Text score;
     public static bool isGame = true;
     int score_cnt = 0;
@@ -50,15 +50,8 @@ public class Wall : MonoBehaviour
         {
             isGame = false;
             GetComponent<AudioSource>().Play();
-            Restart.SetActive(true);
+         
         }
     }
-    public void restart()
-    {
-        isGame = true;
-        speed = 1;
-        score_cnt = 0;
-        wall.transform.position = new Vector3(2, wall.transform.position.y, 0);
-        Restart.SetActive(false);
-    }
+   
 }
